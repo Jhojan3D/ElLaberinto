@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2348211685912530116}
   - component: {fileID: 4781987955084680423}
+  - component: {fileID: 8831562317472686882}
+  - component: {fileID: 240066706647532994}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -44,3 +46,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd7196939dc0c1428c70885754b1ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CambiarDeEscena
+--- !u!114 &8831562317472686882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5367135094162515612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af3af366e07b7d1498912cbc6257d4a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PreferenciasController
+  cinemachineInputAxisController: {fileID: 0}
+--- !u!114 &240066706647532994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5367135094162515612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e45cbd9b64fb53140b73eee567edf2cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GuardarReferencias
+  musicSlider: {fileID: 0}
+  sfxSlider: {fileID: 0}
+  sfxUiSlider: {fileID: 0}
+  SensibilidadSlider: {fileID: 0}
