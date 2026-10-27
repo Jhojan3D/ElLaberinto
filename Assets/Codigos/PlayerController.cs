@@ -24,6 +24,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool haveDash;
     [SerializeField] private float tiempoEsperaDash;
     [SerializeField] private float tiempoActualDash;
+    [Header("Setting Attack")]
+    [SerializeField] private bool haveAttack;
+    [SerializeField] private float tiempoEsperaAttack;
+    [SerializeField] private float tiempoActualAttack;
 
 
 
@@ -57,6 +61,8 @@ public class PlayerController : MonoBehaviour
         jumpCurrent = jumpMax;
         haveDash = true;
         tiempoActualDash = tiempoEsperaDash;
+        haveAttack = true;
+        tiempoActualAttack = tiempoEsperaAttack;
     }
     private void Update()
     {
@@ -73,6 +79,10 @@ public class PlayerController : MonoBehaviour
         if(dashAction != null)
         {
             PlayerDash();
+        }
+        if(attackAction != null)
+        {
+            PlayerAttack();
         }
         
     }
@@ -143,6 +153,14 @@ public class PlayerController : MonoBehaviour
                 tiempoActualDash = tiempoEsperaDash;
                 haveDash = true;
             }
+        }
+    }
+    private void PlayerAttack()
+    {
+        if(attackAction.WasPressedThisFrame() && haveAttack)
+        {
+            animator.SetTrigger("IsAttack");
+                
         }
     }
 }
