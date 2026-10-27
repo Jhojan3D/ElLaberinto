@@ -160,7 +160,16 @@ public class PlayerController : MonoBehaviour
         if(attackAction.WasPressedThisFrame() && haveAttack)
         {
             animator.SetTrigger("IsAttack");
-                
+            haveAttack = false;
+        }
+        else if(!haveAttack)
+        {
+            tiempoActualAttack -= Time.deltaTime;
+            if(tiempoActualAttack <= 0f)
+            {
+                tiempoActualAttack = tiempoEsperaAttack;
+                haveAttack = true;
+            }
         }
     }
 }
