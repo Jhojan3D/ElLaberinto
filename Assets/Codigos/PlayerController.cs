@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     private InputAction attackAction;
     private Rigidbody rb;
     private Camera camara;
+    private Animator animator;
+
     [Header("Setting Move")]
     [SerializeField] private float speedMove;
     private Vector2 inputMove;
@@ -48,6 +50,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         camara = Camera.main;
+        animator = GetComponentInChildren<Animator>();
     }
     private void Start()
     {
