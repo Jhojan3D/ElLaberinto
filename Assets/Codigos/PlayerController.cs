@@ -17,6 +17,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce;
     [SerializeField] private int jumpMax;
     [SerializeField] private int jumpCurrent;
+    [Header("Setting Dash")]
+    [SerializeField] private float dashForce;
+    [SerializeField] private bool haveDash;
+    [SerializeField] private float tiempoEsperaDash;
+    [SerializeField] private float tiempoActualDash;
+
 
 
 
@@ -46,6 +52,8 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         jumpCurrent = jumpMax;
+        haveDash = true;
+        tiempoActualDash = tiempoEsperaDash;
     }
     private void Update()
     {
@@ -57,6 +65,10 @@ public class PlayerController : MonoBehaviour
         if(jumpAction != null)
         {
             PlayerJump();
+        }
+        if(dashAction != null)
+        {
+            PlayerDash();
         }
         
     }
@@ -85,10 +97,36 @@ public class PlayerController : MonoBehaviour
 
     private void PlayerJump()
     {
-        if(jumpAction.WasPressedThisFrame())
+        if(jumpAction.WasPressedThisFrame() && jumpCurrent > 0f)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+            jumpCurrent--;
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.collider.CompareTag("Ground"))
+        {
+            jumpCurrent = jumpMax;
+        }
+    }
+    private void PlayerDash()
+    {
+        Vector3 allMove = MovimientoTotal();
+        if(dashAction.WasPressedThisFrame() && haveDash)
+        {
+            rb.AddForce(allMove * dashForce, ForceMode.Impulse);
+            haveDash = false;
+        }
+        else if(!haveDash)
+        {
+            tiempoActualDash -= Time.deltaTime;
+            if(tiempoActualDash <= 0f)
+            {
+                tiempoActualDash = tiempoEsperaDash;
+                haveDash = true;
+            }
         }
     }
 }
