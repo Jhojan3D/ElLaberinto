@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4781987955084680423}
   - component: {fileID: 8831562317472686882}
   - component: {fileID: 240066706647532994}
+  - component: {fileID: 5357448731854542989}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -74,4 +75,16 @@ MonoBehaviour:
   musicSlider: {fileID: 0}
   sfxSlider: {fileID: 0}
   sfxUiSlider: {fileID: 0}
-  SensibilidadSlider: {fileID: 0}
+  sensibilidadSlider: {fileID: 0}
+--- !u!114 &5357448731854542989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5367135094162515612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60f81b688e7c0d74a8593f1c7502b237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SalirDelJuego
