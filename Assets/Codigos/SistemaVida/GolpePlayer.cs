@@ -20,14 +20,14 @@ public class GolpePlayer : MonoBehaviour
         distanciaEnemigo = Vector3.Distance(transform.position, enemigoTransform.position);
         if (distanciaEnemigo <= rangoDeDanio)
         {
-            SistemaDeVida sistemaDeVida = enemigoTransform.GetComponent<SistemaDeVida>();
-            if (sistemaDeVida == null)
+            SistemaDeVidaEne1 sistemaDeVidaEne1 = enemigoTransform.GetComponent<SistemaDeVidaEne1>();
+            if (sistemaDeVidaEne1 == null)
             {
                 return;
             }
             else
             {
-                sistemaDeVida.RecibirDanio(danioGolpe);
+                sistemaDeVidaEne1.RecibirDanio(danioGolpe);
             }
 
         }
