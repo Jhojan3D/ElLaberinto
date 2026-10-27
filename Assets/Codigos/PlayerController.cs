@@ -64,6 +64,7 @@ public class PlayerController : MonoBehaviour
         {
             inputMove = moveAction.ReadValue<Vector2>();
             PlayerMove();
+            AnimacionMover();
         }
         if(jumpAction != null)
         {
@@ -97,6 +98,17 @@ public class PlayerController : MonoBehaviour
             rb.MoveRotation(Quaternion.Slerp(rb.rotation, rotacionPlayer, 10f));
         }
     }
+    private void AnimacionMover()
+    {
+        if(inputMove.magnitude > 0.1f)
+        {
+            animator.SetBool("IsRunning", true);
+        }
+        else
+        {
+            animator.SetBool("IsRunning", false);
+        }
+    }
 
     private void PlayerJump()
     {
@@ -104,6 +116,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+            animator.SetTrigger("IsJump");
             jumpCurrent--;
         }
     }
