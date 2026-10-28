@@ -3,33 +3,35 @@ using UnityEngine;
 public class GolpePlayer : MonoBehaviour
 {
     public float danioGolpe;
-    public Transform enemigoTransform;
     public float distanciaEnemigo;
     public float rangoDeDanio;
+    public GameObject[] enemigos;
 
     public void Awake()
     {
-        enemigoTransform = GameObject.FindGameObjectWithTag("Enemigo").transform;
+        enemigos = GameObject.FindGameObjectsWithTag("Enemigo");
     }
     public void InpactoGolpe()
     {
-        if (enemigoTransform == null)
+        enemigos = GameObject.FindGameObjectsWithTag("Enemigo");
+        foreach(GameObject enemigo in enemigos)
         {
-            return;
-        }
-        distanciaEnemigo = Vector3.Distance(transform.position, enemigoTransform.position);
-        if (distanciaEnemigo <= rangoDeDanio)
-        {
-            SistemaDeVidaEne1 sistemaDeVidaEne1 = enemigoTransform.GetComponent<SistemaDeVidaEne1>();
-            if (sistemaDeVidaEne1 == null)
+            distanciaEnemigo = Vector3.Distance(transform.position,enemigo.transform.position);
+            if (distanciaEnemigo <= rangoDeDanio)
             {
-                return;
-            }
-            else
-            {
-                sistemaDeVidaEne1.RecibirDanio(danioGolpe);
-            }
+                SistemaDeVidaEne1 sistemaDeVidaEne1 = enemigo.GetComponent<SistemaDeVidaEne1>();
+                if (sistemaDeVidaEne1 == null)
+                {
+                    return;
+                }
+                else
+                {
+                    sistemaDeVidaEne1.RecibirDanio(danioGolpe);
+                }
 
+            }
         }
+       
+        
     }
 }
