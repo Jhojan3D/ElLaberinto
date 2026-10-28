@@ -3,19 +3,16 @@ using UnityEngine.UI;
 
 public class BarraDeEnemigos : MonoBehaviour
 {
-     public GameObject[] images;
      public float vidaMax;
      public GameObject[] enemigos;
      SistemaDeVidaEne1 sistemaDeVidaEne1;
-     public Image image1;
+     Image image;
     
 
      private void Awake()
      {
         enemigos = GameObject.FindGameObjectsWithTag("Enemigo");
-        images = GameObject.FindGameObjectsWithTag("BarraDeVida");
-         
-
+        image = GetComponent<Image>();
      }
      private void Start()
      {
@@ -25,17 +22,13 @@ public class BarraDeEnemigos : MonoBehaviour
              sistemaDeVidaEne1 = enemigo.GetComponent<SistemaDeVidaEne1>();
              vidaMax = sistemaDeVidaEne1.vidaMaxima;
          }
-        foreach(GameObject image in images)
-        {
-            image1 = image.GetComponent<Image>();
-        }
-        
+
 
      }
      private void Update()
      {
 
-             image1.fillAmount = sistemaDeVidaEne1.vidaActual / vidaMax;  
+            // image.fillAmount = sistemaDeVidaEne1.vidaActual / vidaMax; 
 
      }
     
