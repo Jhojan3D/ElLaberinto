@@ -262,6 +262,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1427514580}
+        m_TargetAssemblyTypeName: SonidoUI, Assembly-CSharp
+        m_MethodName: PlaySfxUi
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: f69f4b5fd2a68b1478758db195675060, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &108491951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1062,6 +1074,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Level1
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1427514580}
+        m_TargetAssemblyTypeName: SonidoUI, Assembly-CSharp
+        m_MethodName: PlaySfxUi
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: f69f4b5fd2a68b1478758db195675060, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &503448784
@@ -3593,6 +3617,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1427514580}
+        m_TargetAssemblyTypeName: SonidoUI, Assembly-CSharp
+        m_MethodName: PlaySfxUi
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: f69f4b5fd2a68b1478758db195675060, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1342690860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3710,6 +3746,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356836977}
   m_CullTransparentMesh: 1
+--- !u!114 &1427514580 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7905199633841144220, guid: 02ea2a2ac7a3acc40b5762122fd7967b, type: 3}
+  m_PrefabInstance: {fileID: 1916869692}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9752a965c50fa8849b5eaed7fd3c14e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SonidoUI
 --- !u!1 &1450218096
 GameObject:
   m_ObjectHideFlags: 0
@@ -3812,6 +3859,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1427514580}
+        m_TargetAssemblyTypeName: SonidoUI, Assembly-CSharp
+        m_MethodName: PlaySfxUi
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: f69f4b5fd2a68b1478758db195675060, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4476,6 +4535,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 820471650055884438, guid: 02ea2a2ac7a3acc40b5762122fd7967b, type: 3}
+      propertyPath: sonidoAmbiente
+      value: 
+      objectReference: {fileID: 8300000, guid: d191b7edecdb43b46b3502d805c832bf, type: 3}
     - target: {fileID: 4495195754715295698, guid: 02ea2a2ac7a3acc40b5762122fd7967b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.16282
