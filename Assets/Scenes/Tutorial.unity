@@ -4860,6 +4860,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2861844024237278652}
+        m_TargetAssemblyTypeName: SonidoUI, Assembly-CSharp
+        m_MethodName: PlaySfxUi
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: f69f4b5fd2a68b1478758db195675060, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &741713007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5042,7 +5054,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &804003996
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20680,6 +20692,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02ea2a2ac7a3acc40b5762122fd7967b, type: 3}
+--- !u!114 &2861844024237278652 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7905199633841144220, guid: 02ea2a2ac7a3acc40b5762122fd7967b, type: 3}
+  m_PrefabInstance: {fileID: 2861844024237278651}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9752a965c50fa8849b5eaed7fd3c14e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SonidoUI
 --- !u!1001 &3493180261276681639
 PrefabInstance:
   m_ObjectHideFlags: 0
