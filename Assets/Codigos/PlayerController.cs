@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     [Header("Audios Clips")]
     [SerializeField] private AudioClip attackSonido;
     [SerializeField] private AudioClip jumpSonidos;
+    [SerializeField] private AudioClip dashSonido;
 
 
 
@@ -147,6 +148,7 @@ public class PlayerController : MonoBehaviour
         if(dashAction.WasPressedThisFrame() && haveDash)
         {
             rb.AddForce(allMove * dashForce, ForceMode.Impulse);
+            AudioManager.Instance.PlaySfx(dashSonido);
             haveDash = false;
         }
         else if(!haveDash)

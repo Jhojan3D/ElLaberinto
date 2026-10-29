@@ -300,6 +300,7 @@ MonoBehaviour:
   tiempoActualAttack: 0
   attackSonido: {fileID: 8300000, guid: b75528ddecb573549ab21e6dcf015685, type: 3}
   jumpSonidos: {fileID: 8300000, guid: e324f67cd4bd9f9478bbefea7284c454, type: 3}
+  dashSonido: {fileID: 8300000, guid: 3a63feadd93db474baa1264107b7d667, type: 3}
 --- !u!114 &751357234237570275
 MonoBehaviour:
   m_ObjectHideFlags: 0
