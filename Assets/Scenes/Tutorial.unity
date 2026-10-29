@@ -4759,8 +4759,8 @@ Transform:
   m_GameObject: {fileID: 708432576}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 10.9319, y: 1.1165, z: 16.7273}
-  m_LocalScale: {x: 0.93559164, y: 0.8665118, z: 12.901291}
+  m_LocalPosition: {x: 10.9319, y: 0.611, z: 16.7273}
+  m_LocalScale: {x: 0.93559164, y: 1.4045291, z: 12.901291}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -14556,6 +14556,7 @@ MonoBehaviour:
   vidaMaxima: 100
   vidaActual: 0
   nuevaEscena: Level1
+  muertePlayer: {fileID: 0}
 --- !u!114 &1185673402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16886,6 +16887,8 @@ MonoBehaviour:
   playerTransform: {fileID: 0}
   distanciaPlayer: 0
   rangoDeDanio: 2
+  golpeSonido: {fileID: 0}
+  danioSonido: {fileID: 0}
 --- !u!95 &1423278710
 Animator:
   serializedVersion: 7
@@ -18161,6 +18164,7 @@ MonoBehaviour:
   distanciaEnemigo: 0
   rangoDeDanio: 2
   enemigos: []
+  danioAlEnemigo: {fileID: 0}
 --- !u!95 &1582317619
 Animator:
   serializedVersion: 7
@@ -19855,6 +19859,7 @@ MonoBehaviour:
   vidaMaxima: 100
   vidaActual: 0
   sumarVidaPlayer: 0
+  muerteEnemigo: {fileID: 0}
 --- !u!114 &1999718213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20984,7 +20989,7 @@ PrefabInstance:
     - target: {fileID: 820471650055884438, guid: 02ea2a2ac7a3acc40b5762122fd7967b, type: 3}
       propertyPath: sonidoAmbiente
       value: 
-      objectReference: {fileID: 8300000, guid: 20512f4a7a340bd40a85f6f8770259ff, type: 3}
+      objectReference: {fileID: 8300000, guid: 308000a3cf2a7ff44bde09fd8351b0e3, type: 3}
     - target: {fileID: 4495195754715295698, guid: 02ea2a2ac7a3acc40b5762122fd7967b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.28517
@@ -21243,19 +21248,19 @@ PrefabInstance:
     - target: {fileID: 240066706647532994, guid: 736e95b1c933d4d4ca1b289d01cc142c, type: 3}
       propertyPath: sfxSlider
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1282836864}
     - target: {fileID: 240066706647532994, guid: 736e95b1c933d4d4ca1b289d01cc142c, type: 3}
       propertyPath: musicSlider
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 474497872}
     - target: {fileID: 240066706647532994, guid: 736e95b1c933d4d4ca1b289d01cc142c, type: 3}
       propertyPath: sfxUiSlider
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 12057891}
     - target: {fileID: 240066706647532994, guid: 736e95b1c933d4d4ca1b289d01cc142c, type: 3}
       propertyPath: sensibilidadSlider
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1402672785}
     - target: {fileID: 2348211685912530116, guid: 736e95b1c933d4d4ca1b289d01cc142c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.28517

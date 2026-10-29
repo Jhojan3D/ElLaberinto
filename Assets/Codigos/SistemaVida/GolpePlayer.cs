@@ -6,6 +6,7 @@ public class GolpePlayer : MonoBehaviour
     public float distanciaEnemigo;
     public float rangoDeDanio;
     public GameObject[] enemigos;
+    public AudioClip danioAlEnemigo;
 
     public void Awake()
     {
@@ -27,6 +28,7 @@ public class GolpePlayer : MonoBehaviour
                 else
                 {
                     sistemaDeVidaEne1.RecibirDanio(danioGolpe);
+                    AudioManager.Instance.PlaySfx(danioAlEnemigo);
                 }
 
             }

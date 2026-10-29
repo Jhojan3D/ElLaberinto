@@ -8,7 +8,7 @@ public class GolpeEnemigo1 : MonoBehaviour
     public float rangoDeDanio;
     [Header("Sonidos")]
     public AudioClip golpeSonido;
-    public AudioClip dañoSonido;
+    public AudioClip danioSonido;
 
     public void Awake()
     {
@@ -32,6 +32,7 @@ public class GolpeEnemigo1 : MonoBehaviour
             {
                 sistemaDeVida.RecibirDanio(danioGolpe);
                 AudioManager.Instance.PlaySfx(golpeSonido);
+                AudioManager.Instance.PlaySfx(danioSonido);
             }
             
         }

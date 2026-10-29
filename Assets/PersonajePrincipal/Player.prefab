@@ -299,6 +299,7 @@ MonoBehaviour:
   tiempoEsperaAttack: 0.5
   tiempoActualAttack: 0
   attackSonido: {fileID: 8300000, guid: b75528ddecb573549ab21e6dcf015685, type: 3}
+  jumpSonidos: {fileID: 8300000, guid: e324f67cd4bd9f9478bbefea7284c454, type: 3}
 --- !u!114 &751357234237570275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,6 +315,7 @@ MonoBehaviour:
   vidaMaxima: 100
   vidaActual: 0
   nuevaEscena: Level1
+  muertePlayer: {fileID: 8300000, guid: 774eabff040bfc34e923cf473e80bb39, type: 3}
 --- !u!1001 &6525197828405054920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1048,6 +1050,7 @@ MonoBehaviour:
   distanciaEnemigo: 0
   rangoDeDanio: 2
   enemigos: []
+  danioAlEnemigo: {fileID: 0}
 --- !u!4 &6702642292509288995 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0663c49705279774db33deb1008d1f9b, type: 3}
@@ -1331,6 +1334,7 @@ MonoBehaviour:
   distanciaEnemigo: 0
   rangoDeDanio: 2
   enemigos: []
+  danioAlEnemigo: {fileID: 8300000, guid: 172e3c2a713907a4aa31675f01504421, type: 3}
 --- !u!4 &8867969844506668619 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 78f06b4f254b7d345a1afa513a7d2337, type: 3}

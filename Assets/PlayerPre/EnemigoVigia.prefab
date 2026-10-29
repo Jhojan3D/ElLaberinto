@@ -577,6 +577,7 @@ MonoBehaviour:
   vidaMaxima: 100
   vidaActual: 0
   sumarVidaPlayer: 0
+  muerteEnemigo: {fileID: 8300000, guid: 172e3c2a713907a4aa31675f01504421, type: 3}
 --- !u!1 &8706446263473349011
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,6 +815,8 @@ MonoBehaviour:
   playerTransform: {fileID: 0}
   distanciaPlayer: 0
   rangoDeDanio: 2
+  golpeSonido: {fileID: 0}
+  danioSonido: {fileID: 0}
 --- !u!4 &2133489622325728075 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0663c49705279774db33deb1008d1f9b, type: 3}
@@ -929,6 +932,8 @@ MonoBehaviour:
   playerTransform: {fileID: 0}
   distanciaPlayer: 0
   rangoDeDanio: 2
+  golpeSonido: {fileID: 8300000, guid: e13f49b52a651ec42a3ef4d9ee344ce1, type: 3}
+  danioSonido: {fileID: 8300000, guid: 92789f8f425e6114696879860af80d5c, type: 3}
 --- !u!4 &2051226186906894069 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9c8310fcf4abeb94bb59e70b5ba87bac, type: 3}

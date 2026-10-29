@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float tiempoActualAttack;
     [Header("Audios Clips")]
     [SerializeField] private AudioClip attackSonido;
+    [SerializeField] private AudioClip jumpSonidos;
 
 
 
@@ -129,6 +130,7 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
             animator.SetTrigger("IsJump");
+            AudioManager.Instance.PlaySfx(jumpSonidos);
             jumpCurrent--;
         }
     }

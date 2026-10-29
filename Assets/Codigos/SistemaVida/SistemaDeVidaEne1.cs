@@ -5,6 +5,8 @@ public class SistemaDeVidaEne1 : MonoBehaviour
     public float vidaMaxima;
     public float vidaActual;
     public float sumarVidaPlayer;
+    [Header("Sonidos")]
+    public AudioClip muerteEnemigo;
     public void Start()
     {
         vidaActual = vidaMaxima;
@@ -24,6 +26,8 @@ public class SistemaDeVidaEne1 : MonoBehaviour
     {
         SistemaDeVida sistemaDeVida = GameObject.FindGameObjectWithTag("Player").GetComponent<SistemaDeVida>();
         sistemaDeVida.CargarVida(sumarVidaPlayer);
+        AudioManager.Instance.PlaySfx(muerteEnemigo);
+        
         Destroy(gameObject);
     }
 }

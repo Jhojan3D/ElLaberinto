@@ -7,6 +7,8 @@ public class SistemaDeVida : MonoBehaviour
     public float vidaActual;
     [Header("Escena A Reiniciar")]
     public string nuevaEscena;
+    [Header("Sonido")]
+    public AudioClip muertePlayer;
     public void Start()
     {
         vidaActual = vidaMaxima;
@@ -33,6 +35,7 @@ public class SistemaDeVida : MonoBehaviour
 
     public void Muerte()
     {
+        AudioManager.Instance.PlaySfx(muertePlayer);
         Time.timeScale = 1f;
         SceneManager.LoadScene(nuevaEscena);
     }
