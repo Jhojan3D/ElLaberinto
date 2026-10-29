@@ -1307,6 +1307,8 @@ MonoBehaviour:
   playerTransform: {fileID: 0}
   distanciaPlayer: 0
   rangoDeDanio: 2
+  golpeSonido: {fileID: 0}
+  "da\xF1oSonido": {fileID: 0}
 --- !u!4 &3068395086367116037 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0663c49705279774db33deb1008d1f9b, type: 3}
@@ -1594,6 +1596,8 @@ MonoBehaviour:
   playerTransform: {fileID: 0}
   distanciaPlayer: 0
   rangoDeDanio: 2
+  golpeSonido: {fileID: 8300000, guid: e13f49b52a651ec42a3ef4d9ee344ce1, type: 3}
+  "da\xF1oSonido": {fileID: 8300000, guid: 92789f8f425e6114696879860af80d5c, type: 3}
 --- !u!4 &9159839522574537710 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9c8310fcf4abeb94bb59e70b5ba87bac, type: 3}

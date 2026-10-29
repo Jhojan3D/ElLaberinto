@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool haveAttack;
     [SerializeField] private float tiempoEsperaAttack;
     [SerializeField] private float tiempoActualAttack;
+    [Header("Audios Clips")]
+    [SerializeField] private AudioClip attackSonido;
 
 
 
@@ -160,6 +162,7 @@ public class PlayerController : MonoBehaviour
         if(attackAction.WasPressedThisFrame() && haveAttack)
         {
             animator.SetTrigger("IsAttack");
+            AudioManager.Instance.PlaySfx(attackSonido);
             haveAttack = false;
         }
         else if(!haveAttack)

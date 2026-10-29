@@ -6,6 +6,9 @@ public class GolpeEnemigo1 : MonoBehaviour
     public Transform playerTransform;
     public float distanciaPlayer;
     public float rangoDeDanio;
+    [Header("Sonidos")]
+    public AudioClip golpeSonido;
+    public AudioClip dañoSonido;
 
     public void Awake()
     {
@@ -28,6 +31,7 @@ public class GolpeEnemigo1 : MonoBehaviour
             else
             {
                 sistemaDeVida.RecibirDanio(danioGolpe);
+                AudioManager.Instance.PlaySfx(golpeSonido);
             }
             
         }

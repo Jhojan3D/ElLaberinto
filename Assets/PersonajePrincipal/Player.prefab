@@ -298,6 +298,7 @@ MonoBehaviour:
   haveAttack: 0
   tiempoEsperaAttack: 0.5
   tiempoActualAttack: 0
+  attackSonido: {fileID: 8300000, guid: b75528ddecb573549ab21e6dcf015685, type: 3}
 --- !u!114 &751357234237570275
 MonoBehaviour:
   m_ObjectHideFlags: 0
