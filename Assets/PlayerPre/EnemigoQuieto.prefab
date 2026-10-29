@@ -571,6 +571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SistemaDeVidaEne1
   vidaMaxima: 100
   vidaActual: 0
+  sumarVidaPlayer: 5
 --- !u!1001 &3251485060905970926
 PrefabInstance:
   m_ObjectHideFlags: 0

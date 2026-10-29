@@ -4,6 +4,7 @@ public class SistemaDeVidaEne1 : MonoBehaviour
 {
     public float vidaMaxima;
     public float vidaActual;
+    public float sumarVidaPlayer;
     public void Start()
     {
         vidaActual = vidaMaxima;
@@ -21,6 +22,8 @@ public class SistemaDeVidaEne1 : MonoBehaviour
 
     public void Muerte()
     {
+        SistemaDeVida sistemaDeVida = GameObject.FindGameObjectWithTag("Player").GetComponent<SistemaDeVida>();
+        sistemaDeVida.CargarVida(sumarVidaPlayer);
         Destroy(gameObject);
     }
 }

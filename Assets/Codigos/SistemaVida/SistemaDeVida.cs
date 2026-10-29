@@ -21,6 +21,15 @@ public class SistemaDeVida : MonoBehaviour
             Muerte();
         }
     }
+    public void CargarVida(float recibirVida)
+    {
+        vidaActual += recibirVida;
+        Debug.Log("Recibir Vida" + recibirVida);
+        if ( vidaActual>= 100f)
+        {
+            vidaActual = vidaMaxima;
+        }
+    }
 
     public void Muerte()
     {
