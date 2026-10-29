@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BarraDeEnemigos
   vidaMax: 0
-  enemigos: []
+  sistemaDeVidaEne1: {fileID: 4244503001215396343}
 --- !u!1 &6358687005639408913
 GameObject:
   m_ObjectHideFlags: 0
