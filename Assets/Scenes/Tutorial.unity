@@ -860,7 +860,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2842151, y: 2.0157273e-15, z: -5.975424e-16, w: 0.95876056}
+  m_LocalRotation: {x: 0.28421506, y: 1.5360617e-16, z: -4.5535022e-17, w: 0.95876056}
   m_LocalPosition: {x: 12.59, y: 4.353, z: -4.24105}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1092,7 +1092,7 @@ MonoBehaviour:
       Height: 3.25
     Bottom:
       Radius: 3.5
-      Height: -1.06
+      Height: -1
     SplineCurvature: 0.5
   RecenteringTarget: 2
   HorizontalAxis:
@@ -1176,7 +1176,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341019302}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.28421506, y: 2.1854348e-15, z: -1.1700276e-15, w: 0.95876056}
+  m_LocalRotation: {x: 0.28421503, y: 1.4657087e-16, z: -2.1802487e-17, w: 0.9587606}
   m_LocalPosition: {x: 12.59, y: 4.353, z: -4.24105}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2473,7 +2473,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: b23bc1cbf62ab5a4e93a59325d2bb7dd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3087,6 +3087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TocoLaPuerta
   reiniciarEscena: Level1
   sonidoPortal: {fileID: 8300000, guid: d97718954a342bc41b27cf4ec991d841, type: 3}
+  gameOver: {fileID: 0}
 --- !u!65 &564445723
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3272,7 +3273,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: b23bc1cbf62ab5a4e93a59325d2bb7dd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3705,7 +3706,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: b23bc1cbf62ab5a4e93a59325d2bb7dd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4292,7 +4293,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: b23bc1cbf62ab5a4e93a59325d2bb7dd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4728,7 +4729,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: b23bc1cbf62ab5a4e93a59325d2bb7dd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5672,6 +5673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TocoLaPuerta
   reiniciarEscena: Level1
   sonidoPortal: {fileID: 8300000, guid: d97718954a342bc41b27cf4ec991d841, type: 3}
+  gameOver: {fileID: 0}
 --- !u!1 &803507413
 GameObject:
   m_ObjectHideFlags: 0
@@ -6241,55 +6243,6 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
---- !u!1 &832575517
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 832575519}
-  - component: {fileID: 832575518}
-  m_Layer: 0
-  m_Name: Global Volume
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &832575518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 832575517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IsGlobal: 1
-  priority: 0
-  blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 11400000, guid: 39c683b7b1271894fa6de5c4b57a3ac5, type: 2}
---- !u!4 &832575519
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 832575517}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &836556924
 GameObject:
   m_ObjectHideFlags: 0
@@ -11965,6 +11918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TocoLaPuerta
   reiniciarEscena: Level1
   sonidoPortal: {fileID: 8300000, guid: d97718954a342bc41b27cf4ec991d841, type: 3}
+  gameOver: {fileID: 0}
 --- !u!65 &992590654
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13362,6 +13316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TocoLaPuerta
   reiniciarEscena: Level1
   sonidoPortal: {fileID: 8300000, guid: d97718954a342bc41b27cf4ec991d841, type: 3}
+  gameOver: {fileID: 0}
 --- !u!65 &1033621832
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13730,7 +13685,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: b23bc1cbf62ab5a4e93a59325d2bb7dd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14226,7 +14181,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: b23bc1cbf62ab5a4e93a59325d2bb7dd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14721,6 +14676,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151351825}
   m_CullTransparentMesh: 1
+--- !u!1001 &1158118165
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6186546449805965319, guid: 50abc1d01678f8144966cae2a11187fa, type: 3}
+      propertyPath: m_Name
+      value: Global Volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277033728795702767, guid: 50abc1d01678f8144966cae2a11187fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 93.58469
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277033728795702767, guid: 50abc1d01678f8144966cae2a11187fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277033728795702767, guid: 50abc1d01678f8144966cae2a11187fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 82.90532
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277033728795702767, guid: 50abc1d01678f8144966cae2a11187fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277033728795702767, guid: 50abc1d01678f8144966cae2a11187fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277033728795702767, guid: 50abc1d01678f8144966cae2a11187fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277033728795702767, guid: 50abc1d01678f8144966cae2a11187fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277033728795702767, guid: 50abc1d01678f8144966cae2a11187fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277033728795702767, guid: 50abc1d01678f8144966cae2a11187fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7277033728795702767, guid: 50abc1d01678f8144966cae2a11187fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 50abc1d01678f8144966cae2a11187fa, type: 3}
 --- !u!1 &1177784953
 GameObject:
   m_ObjectHideFlags: 0
@@ -15561,7 +15573,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: b23bc1cbf62ab5a4e93a59325d2bb7dd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18937,6 +18949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TocoLaPuerta
   reiniciarEscena: Level1
   sonidoPortal: {fileID: 8300000, guid: d97718954a342bc41b27cf4ec991d841, type: 3}
+  gameOver: {fileID: 0}
 --- !u!65 &1644722540
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19692,6 +19705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TocoLaPuerta
   reiniciarEscena: Level1
   sonidoPortal: {fileID: 8300000, guid: d97718954a342bc41b27cf4ec991d841, type: 3}
+  gameOver: {fileID: 0}
 --- !u!65 &1881036030
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20741,7 +20755,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: b23bc1cbf62ab5a4e93a59325d2bb7dd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21835,7 +21849,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 330585546}
   - {fileID: 410087041}
-  - {fileID: 832575519}
   - {fileID: 341019308}
   - {fileID: 6148026422391299182}
   - {fileID: 1185673407}
@@ -21866,3 +21879,4 @@ SceneRoots:
   - {fileID: 1037430253}
   - {fileID: 453242825}
   - {fileID: 539559931}
+  - {fileID: 1158118165}
