@@ -526,7 +526,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 4.9
+  m_Speed: 6
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -575,7 +575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SistemaDeVidaEne1
   vidaMaxima: 100
   vidaActual: 0
-  sumarVidaPlayer: 0
+  sumarVidaPlayer: 10
   muerteEnemigo: {fileID: 8300000, guid: 172e3c2a713907a4aa31675f01504421, type: 3}
 --- !u!1001 &1878305594302559392
 PrefabInstance:

@@ -1331,7 +1331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc5f649e01d5ad546b57dc9d8023a3b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GolpePlayer
-  danioGolpe: 50
+  danioGolpe: 34
   distanciaEnemigo: 0
   rangoDeDanio: 2
   enemigos: []
